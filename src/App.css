@@ -1,0 +1,409 @@
+:root {
+  --first-colour: #1ffc83;
+  --second-colour: white;
+  --third-colour: black;
+  --fourth-colour: rgb(13, 13, 13);
+  --fifth-colour: rgb(194, 194, 194);
+  --div-padding: 12px;
+  --div-margin: 12px;
+  --fs-xl: clamp(3.5rem, 7vw + 1rem, 12rem);
+  --fs-l: clamp(2rem, 3vw + 1rem, 5rem);
+  --fs-800: 2rem;
+  --fs-600: 1.5rem;
+  --fs-400: 1rem;
+}
+
+.anton-regular {
+  font-family: "Anton", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+body {
+  box-sizing: border-box;
+  background: var(--third-colour);
+}
+
+.section {
+  padding: 100px 0px;
+}
+
+.second-section {
+  background-color: var(--fourth-colour);
+}
+
+.third-section {
+  background-color: var(--first-colour);
+  color: var(--third-colour);
+}
+
+h1, h2, h3 , h4, h5 {
+  font-family: 'Anton', sans-serif;
+}
+
+.navbar {
+  background: var(--third-colour);
+  color: var(--second-colour);
+  padding: 20px 0px;
+}
+
+.navbar a {
+  color: var(--second-colour);
+}
+.navbar a:hover {
+  color: var(--first-colour);
+}
+
+.nav-link {
+  margin-left: 24px;
+}
+
+.nav-link:hover {
+  color: var(--first-colour);
+}
+
+.collapse {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+.hero {
+  background-color: var(--third-colour);
+  min-height: 95vh;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  font-size: calc(10px + 2vmin);
+  color: var(--second-colour);
+  padding-bottom: 100px;
+}
+
+.hero {
+  background-image: url('/img/hero-01.png');
+  background-size: cover;
+  background-position: center;
+}
+
+.hero h1 {
+  font-size: var(--fs-xl);
+  line-height: 1.1em;
+  text-shadow: 2px 2px 12px #0000008a;
+}
+
+.about h4 {
+  border-bottom: solid 2px;
+  margin-bottom: 1em;
+  color: var(--first-colour);
+}
+
+.about {
+  color: var(--second-colour);
+}
+
+.about-image {
+  width: 500px;
+  max-width: 100%; 
+  height: auto; 
+  margin: 0 auto; 
+  display: block; 
+}
+
+@media (max-width: 1024px) {
+  .about-image {
+    width: 400px;
+  }
+}
+
+@media (max-width: 768px) {
+  .about-image {
+    width: 300px;
+  }
+}
+
+.section-header {
+  font-size: var(--fs-l);
+  line-height: 1.1em;
+}
+
+.services {
+  color: white;
+}
+
+.services-header {
+  color: var(--first-colour);
+}
+
+.text-block {
+  color: var(--second-colour);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 0px 0px;
+}
+
+.text-block-title {
+  border-bottom: solid 1px;
+  color: var(--first-colour);
+}
+
+.text-block-header {
+  margin: 24px 0px;
+}
+
+.process-section-light {
+  padding: 40px;
+  background: var(--first-colour);
+}
+
+.process-section-dark {
+  padding: 40px;
+  color: var(--second-colour);
+}
+
+.process-row {
+  display: flex;
+  align-items: stretch;
+}
+
+.process-image {
+  width: 200px; 
+  height: 200px;
+  object-fit: cover; 
+}
+
+.image-section {
+  height: 500px;
+}
+
+.small-text-block {
+  color: var(--second-colour);
+}
+
+.small-text-block-header {
+  color: var(--first-colour);
+}
+
+.testimonial-block {
+  color: white;
+  background-color: var(--fourth-colour);
+  padding: 24px;
+  margin: 24px;
+  border-radius: 4px;
+}
+
+.testimonial-block h3 {
+  font-size: 5em;
+  color: var(--first-colour);
+}
+
+.testimonial-row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: stretch;
+}
+
+.testimonial-row > .col-12 {
+  display: flex;
+  flex-direction: column;
+}
+
+.App-link {
+  color: var(--first-colour);
+}
+
+.full-width-image {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+accordion-color {
+  background: var(--first-colour);
+}
+
+.contact {
+  color: white;
+}
+
+.contact-items {
+  margin-top: 60px;
+}
+
+.contact-item {
+  margin-bottom: 16px;
+}
+
+.contact-input {
+  margin-bottom: 16px;
+}
+
+.form-control {
+  background: none;
+  border: solid 1px var(--first-colour);
+  padding: 12px;
+  color: white;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+input.form-control::placeholder,
+textarea.form-control::placeholder {
+  color: rgb(134, 134, 134);
+}
+
+textarea.form-control {
+  resize: none;
+}
+
+.btn-primary {
+  background: var(--first-colour); 
+  color: var(--third-colour); 
+  border: none;
+  padding: 12px 16px; 
+  font-size: 16px; 
+  border-radius: 4px; 
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.btn-primary:hover {
+  background: var(--second-colour); 
+  color: var(--third-colour); 
+}
+
+.btn-primary:focus {
+  outline: none; 
+  box-shadow: 0 0 8px var(--first-colour); 
+}
+
+.footer {
+  background-color: var(--third-colour);
+  color: var(--second-colour);
+  padding: 40px 0;
+}
+
+.footer-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.footer-column {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-link {
+  color: var(--second-colour);
+  text-decoration: none;
+  margin-bottom: 8px;
+}
+
+.footer-link:hover {
+  color: var(--first-colour);
+  text-decoration: underline;
+}
+
+
+button {
+  padding: 8px 20px;
+  background: rgba(0, 0, 0, 0);
+  border: solid var(--first-colour);
+  border-radius: 24px;
+  color: var(--secondary-colour);
+  font-size: 20px;
+}
+
+button:hover {
+  background: var(--first-colour);
+  color: var(--third-colour);
+}
+
+span {
+  color: var(--first-colour);
+}
+
+.accordion {
+  background: var(--third-colour);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.accordion-header {
+  background: var(--third-colour);
+  border-radius: 8px;
+}
+
+.accordion-button {
+  background: var(--third-colour);
+  color: var(--first-colour);
+  border: none;
+  text-align: left;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  border-radius: 8px;
+}
+
+.accordion-button:focus {
+  box-shadow: none;
+}
+
+.accordion-button:hover {
+  background: var(--fourth-colour);
+  color: var(--second-colour);
+}
+
+.accordion-button:not(.collapsed) {
+  background: var(--third-colour);
+  color: var(--first-colour);
+  box-shadow: none;
+}
+
+.accordion-button:after {
+  content: '';
+  display: inline-block;
+  width: 0.5rem;
+  height: 0.5rem;
+  border-right: 2px solid var(--first-colour);
+  border-bottom: 2px solid var(--first-colour);
+  transform: rotate(45deg);
+  margin-left: auto;
+  transition: transform 0.3s ease, border-color 0.3s ease;
+}
+
+.accordion-button:not(.collapsed)::after {
+  transform: rotate(-135deg);
+}
+
+.accordion-button:hover:after {
+  border-color: var(--second-colour);
+}
+
+.accordion-body {
+  background: var(--fourth-colour);
+  color: var(--second-colour);
+  padding: 16px;
+  border-top: 1px solid var(--first-colour);
+  border-radius: 8px;
+}
+
+.accordion,
+.accordion-item,
+.accordion-header {
+  background: none;
+  border: none;
+  margin: 0;
+  padding: 0;
+  box-shadow: none;
+}
+
+.accordion-item {
+  margin-bottom: 16px;
+}
